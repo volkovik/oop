@@ -6,16 +6,8 @@ a = [
 
 
 def function(matrix):
-    new_matrix = []
-    for i in range(len(matrix)):
-        row = []
-        for j in range(len(matrix[0])):
-            row.append(matrix[j][i])
-        new_matrix.append(row)
-
-    return new_matrix
-
-    return [[matrix[j][i] for i in range(len(matrix))] for i in range]
+    return [[matrix[j][i] for j in range(len(matrix[i]))]
+            for i in range(len(matrix))]
 
 
-print(function(a))
+print(*function(a), sep='\n')

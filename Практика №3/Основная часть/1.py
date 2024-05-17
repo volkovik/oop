@@ -4,7 +4,7 @@ user_data = [int(line.strip()) for line in stdin]
 
 
 def a_function(numbers):
-    return sum(numbers)
+    return sum(filter(lambda n: -50 < n < 50, numbers))
 
 
 def b_function(numbers):
@@ -15,6 +15,7 @@ def b_function(numbers):
 
 
 def c_function(numbers):
+    numbers = [n for n in numbers if -50 < n < 50]
     return max(numbers) - min(numbers)
 
 
