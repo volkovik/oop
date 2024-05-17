@@ -11,7 +11,7 @@ third_dict = {
 }
 
 merged_dict = first_dict | second_dict | third_dict
-
+merged_dict = {**first_dict, **second_dict, **third_dict}
 print(f'Объединенный список: {merged_dict}')
 
 sorted_merged_dict = dict(sorted(

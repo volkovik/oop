@@ -5,6 +5,7 @@ c = 'Needle In a Haystack'
 print(a + b + c)
 
 a = int(a)
+print(f'Строка a теперь число: {a}')
 
 symbol = input()
 if symbol in b:
